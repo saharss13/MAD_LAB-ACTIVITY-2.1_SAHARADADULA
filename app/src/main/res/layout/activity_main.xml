@@ -5,19 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/Snow">
 
-    <TextView
-        android:id="@+id/tvsec"
-        android:textSize="30sp"
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:gravity="center"
-        android:textAlignment="viewEnd"
-        android:layout_margin="10sp"
-        tools:ignore="RtlCompat">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    </TextView>
+        <TextView
+            android:id="@+id/tvsec"
+            android:layout_width="382dp"
+            android:layout_height="92dp"
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/Salmon"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat">
+
+        </TextView>
 
     <TextView
 
@@ -27,16 +36,20 @@
         android:layout_height="92dp"
         android:gravity="center"
         android:textAlignment="viewEnd"
-        android:layout_margin="10sp"
+        android:layout_margin="5sp"
         android:maxLines="1"
-        tools:ignore="RtlCompat">
+        tools:ignore="RtlCompat"
+        android:textColor="@color/Salmon"
+        android:textStyle="bold">
 
     </TextView>
+
+</LinearLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10sp"
+        android:padding="10dp"
         android:rowCount="6"
         android:columnCount="4">
 
@@ -47,8 +60,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="AC"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/Plum"
+            android:textColor="@color/DarkMagenta"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/bc"
@@ -56,8 +72,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="C"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/Plum"
+            android:textColor="@color/DarkMagenta"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/blog"
@@ -65,17 +84,24 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="LOG"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
             />
         <Button
-            android:id="@+id/MOD"
+            android:id="@+id/bmod"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="MOD"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
+
             />
         <Button
             android:id="@+id/bsquare"
@@ -83,8 +109,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="x²"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/bsqrt"
@@ -92,8 +121,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="√"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/binv"
@@ -101,8 +133,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="1/x"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -110,9 +146,12 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="÷"
-            android:textSize="18sp"
+            android:text="/"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSlateGray"
+            android:textColor="@color/MistyRose"
+            android:textStyle="bold"
             />
 
         <Button
@@ -121,8 +160,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="7"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -131,8 +174,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="8"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -141,8 +188,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="9"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -151,8 +202,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="×"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSlateGray"
+            android:textColor="@color/MistyRose"
+            android:textStyle="bold"
             />
 
         <Button
@@ -161,8 +215,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="4"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -171,8 +229,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="5"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
             />
 
         <Button
@@ -181,8 +242,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="6"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -191,8 +256,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="-"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSlateGray"
+            android:textColor="@color/MistyRose"
+            android:textStyle="bold"
             />
 
         <Button
@@ -201,8 +269,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="1"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
             />
 
         <Button
@@ -211,8 +282,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="2"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
             />
 
         <Button
@@ -221,8 +295,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="3"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -231,18 +309,25 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="+"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSlateGray"
+            android:textColor="@color/MistyRose"
+            android:textStyle="bold"
             />
 
         <Button
-            android:id="@+id/expo"
+            android:id="@+id/bpow"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="^"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -251,8 +336,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="0"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_margin="5dp"
+            android:background="@color/LightSkyBlue"
+            android:textColor="@color/RoyalBlue"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -261,8 +350,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="."
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/LightPink"
+            android:textColor="@color/MediumVioletRed"
+            android:textStyle="bold"
+
             />
 
         <Button
@@ -271,8 +364,11 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:text="="
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:layout_margin="5dp"
+            android:background="@color/Violet"
+            android:textColor="@color/Purple"
+            android:textStyle="bold"
             />
     </GridLayout>
 </LinearLayout>
